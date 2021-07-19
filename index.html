@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleapis.com/css2? family = Mukta: wght @ 300; 400 & display = swap "rel =" stylesheet ">
+        
+        <script src = "js/svg-inject.min.js"></script>  <!-- carregar biblioteca svg-inject [conversão de img]  --> 
+        <script src="https://kit.fontawesome.com/2102b5f0a3.js" crossorigin="anonymous"></script>
+        
+        <link href='https://css.gg/chevron-double-down-r.css' rel='stylesheet'>
+        <link href='https://css.gg/monday.css' rel='stylesheet'>
+
+        <!-- =============== Biblioteca Bootstrap =================-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- =============== Inserindo Logo na aba html =================-->
+        <link rel="shortcut icon" href="svg/spotify.svg">
+
+        <!-- =============== Script feather icon =================-->
+        <script src="https://unpkg.com/feather-icons"></script>
+ 
+        <title>Spotify Re-Designer</title>
+       
+    </head>
+
+    <body>
+<!-- ===== ========= ======= LOADING ========= ========= =======-->
+<!-- ====== LOADING ======   -->
+   <section class="bg-loader">
+
+        <svg style = "max-width: 50px"; aria-hidden="true" focusable="false" data-prefix="fab" data-icon="spotify" class="svg-inline--fa fa-spotify fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="none">
+            <g id="logo-spiderman">
+            <path class="logo-spiderman" fill="#1ed760" d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"></path>
+        </svg>
+        </g>
+
+        <section class="bg-load__spotifailed">
+            <div class="kabobloader">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </section>
+
+    </section>
+
+        <!-- =============== HEADER =================-->
+        <section class="header">
+
+            <div class="page-flows-sp">
+             <span class="flow"> <i class="fab fa-spotify"></i> </span>
+            </div>
+
+            <div class="page-flows">
+                <span class="flow"> <i class="fas fa-chevron-left"></i> </span>
+                <span class="flow"> <i class="fas fa-chevron-right"></i> </span>
+            </div>
+
+            <div class="search">
+             <input type="text" placeholder="Search">
+            </div>
+
+            <div class="user">
+                <div class="user__notifications"> <i class="far fa-bell"> <p> <i class="fas fa-circle"></i> </p> </i> </div>
+                <div class="user__inbox"> <p> <i data-feather="settings"></i> </p> </div>
+                
+                <div class="user__info">
+                    <span class="user__info__img"> 
+                        <img src="img/thi.jpg.jpg" alt="thiago"> 
+                    </span>
+                    
+                    <span class="user__info__name">
+                        <span class="first"> @othiago7 </span>
+                        
+                    </span>
+
+                </div>
+
+                <div class="user__actions">
+                    <div class="dropdown">
+                      <p> <i data-feather="chevrons-down"></i> </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =============== CONTENT LEFT =================-->
+        <section class="content">
+            <div class="content__left">
+              <div class="task-pane">
+                    <span class="circle green"></span>
+                    <span class="circle green"></span>
+                    <span class="circle green"></span>
+              </div>
+
+                <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+
+                <section class="navigation" id="style-1">
+                    <!-- / -->
+                    <!-- Main -->
+                    <div class="nav-links">
+
+                        <div class="nav-link__main"> <span class="main__intro"> Main </span>   <i data-feather="chevron-down"></i> </div>
+
+                        <div class="nav-link">
+                            <i class="fas fa-stream"></i>
+                            <span class="nav-link-name">Início</span>
+                        </div>
+
+                        <div class="nav-link">
+                            <i class="fas fa-compact-disc"></i>
+                            <span class="nav-link-name">Gêneros</span>
+                        </div>
+
+                        <div class="nav-link">
+                            <i data-feather="radio"></i>
+                        <span class="nav-link-name">Rádio</span>
+                        </div>
+
+                        <div class="nav-link">
+                            <i class="fas fa-cloud-download-alt"></i>
+                        <span class="nav-link-name">Downloads</span>
+                        </div>
+                    </div>
+
+                    <!-- _____________________________________________ -->
+                    <div class="separador"></div>
+
+                    <!-- / -->
+                    <!-- Your Music -->
+                    <div class="nav-links">
+
+                        <div class="nav-link__main"> <span class="main__intro"> Your Music  </span> <i data-feather="chevron-down"></i> </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-play"></i>
+                                <span class="nav-link-name">Sons</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-music"></i>
+                                <span class="nav-link-name">Albuns</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-user-friends"></i>
+                                <span class="nav-link-name">Artistas</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-podcast"></i>
+                                <span class="nav-link-name">Podcasts</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fab fa-deezer"></i>
+                                <span class="nav-link-name">Sua Biblioteca</span>
+                        </div>
+                    </div>
+
+                    <!-- _________________________________________________ -->
+                    <div class="separador"></div>
+
+                    <!-- / -->
+                    <!-- Playlist -->
+                    <div class="nav-links">
+
+                        <div class="nav-link__main"> <span class="main__intro"> Playlist  </span>   <i data-feather="chevron-down"></i>     </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-headphones"></i>
+                                <span class="nav-link-name">Gospel</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-headphones"></i>
+                                <span class="nav-link-name">Indie Folk</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-headphones"></i>
+                                <span class="nav-link-name">Daily Mix 3</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-headphones"></i>
+                                <span class="nav-link-name">Top 50 - Mundo</span>
+                        </div>
+
+                        <div class="nav-link">
+                            <i class="fas fa-headphones"></i>
+                            <span class="nav-link-name">Faixas do Shazam</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-headphones"></i>
+                                <span class="nav-link-name">Songs of Glory</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-headphones"></i>
+                                <span class="nav-link-name">Descobertas da Semana</span>
+                        </div>
+
+                        <div class="nav-link">
+                                <i class="fas fa-headphones"></i>
+                                <span class="nav-link-name">Nostalgia</span>
+                        </div>
+
+                    </div>
+
+                    <!-- ___________________________________________________ -->
+                    <div class="separador"></div>
+                </section>    
+
+            </div>
+
+            <!-- Script arrow / abrir e fechar menu lateral -->
+            <script>
+                let arrow = document.querySelector(".arrow");
+                let nav_bar = document.querySelector(".content__left");
+
+                arrow.addEventListener("click", () => {
+                nav_bar.classList.toggle("extended");
+                });
+            </script>
+
+            <!-- =============== CONTENT MIDDLE =================-->
+            <div class="content__middle">
+                <div class="artist is-verified" style="height: 551px;">
+                    <div class="artist__header">
+                        <div class="combo">
+                            <div class="geral">
+                                <div class="js-tilt artist__info__img">
+                                    <i class="fas fa-check-circle"></i>
+                                    <img src="img/jordan.jpg" alt="">
+                                </div>
+
+                                <div class="artist__info col-1 col-md-2">
+                                    <div class="artist__info__type">
+                                        <span>Artista</span>
+                                    </div>
+                
+                                    <div class="artist__info__artist">
+                                        <span class="jef">Jordan Feliz</span>
+                                    </div>
+
+                                    <div class="artist__info__play">
+                                        <span class="play" > <i class="fas fa-play"></i> Listen </span>
+                                        <span class="follow" > Follow </span>
+                                        <p> <i data-feather="user-plus"></i></p>
+                                    </div>
+                                    
+                                    <div class="artist__status">
+                                        <div class="artist__info__views"> <p> 16.983,52  </p> </div> 
+                                        <div class="artist__info__ouvinte"> <p> Ouvintes </p> </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="artist__navigation">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-tabs"> <a href="#"> Visão Geral</a> </li>
+                                <li class="nav-tabs"> <a href="#"> Artistas Relacionado</a> </li>     
+                            </ul>     
+                        </div>
+                    </div>
+
+                    <div class="artist__content">
+                        <div class="tab-content">
+
+                            <!-- Overview -->
+                            <div class="tab-pan">
+                                <div class="overview">
+                                    <div class="overview__artist">
+                                        <!-- último Lançamento -->
+                                        <div class="section-title">ÚLTIMO LANÇAMENTO
+
+                                                <div class="latest-release">
+                                                <div class="js-tilt latest-release__art">
+                                                    <img src="//s3.amazonaws.com/appforest_uf/f1626120457617x893187919656491500/jordan-colection.jpg">
+                                                </div>
+
+                                                <div class="latest-release__song">
+                                                    <div class="latest-release__song__title">If I Ain't Got You (Jordan Feliz Collection)</div>
+                                                    <div class="latest-release__song__date">
+                                                        <span class="day">4</span>
+                                                        <span class="month">December</span>
+                                                        <span class="year">2020</span>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                        
+                                                <!-- / -->
+                                                <!-- Popular-->
+                                                <div class="section-title">Popular</div>
+
+                                                <div class="tracks">
+                                                    <div class="track">
+                                                        <div class="track__art">
+                                                            <img src="//s3.amazonaws.com/appforest_uf/f1626120599561x104586232979704480/jordan-colection2.jpg" alt="When It's Dark Out">
+                                                        </div>
+                                                
+                                                        <div class="track__number">1.</div>
+
+                                                        <div class="track__added">
+                                                            <i class="ion-checkmark-round added"></i>
+                                                        </div>
+
+                                                        <div class="track__title">Jesus Is Coming Back</div>
+                                                        
+                                                        <div class="track__explicit">
+                                                            <span class="label">3:34</span>
+                                                        </div>
+
+                                                        <div class="track__plays">131,501,008</div>
+                                                    </div>
+
+                                                    <div class="track">
+                                                        <div class="track__art">
+                                                            <img src="//s3.amazonaws.com/appforest_uf/f1626122197646x924972869826090600/jordan-deluxe.png" alt="When It's Dark Out">
+                                                        </div>
+
+                                                        <div class="track__number">2.</div>
+
+                                                        <div class="track__added">
+                                                            <i class="ion-checkmark-round added"></i>
+                                                        </div>
+
+                                                        <div class="track__title">Count That High</div>
+                                                        
+                                                        <div class="track__explicit">
+                                                            <span class="label">2:59</span>
+                                                        </div>
+
+                                                        <div class="track__plays">203,124,374</div>
+                                                    </div>
+
+                                                    <div class="track">
+                                                        <div class="track__art">
+                                                            <img src="//s3.amazonaws.com/appforest_uf/f1626122447145x299326765527701900/jordan-faith.jpg" alt="When It's Dark Out">
+                                                        </div>
+
+                                                        <div class="track__number">3.</div>
+
+                                                        <div class="track__added">
+                                                            <i class="ion-checkmark-round added"></i>
+                                                        </div>
+
+                                                        <div class="track__title">Faith</div>
+                                                        
+                                                        <div class="track__explicit">
+                                                            <span class="label">3:42</span>
+                                                        </div>
+
+                                                        <div class="track__plays">301,002,230</div>
+                                                    </div>
+
+                                                    <div class="track">
+                                                        <div class="track__art">
+                                                            <img src="//s3.amazonaws.com/appforest_uf/f1626122807464x176309845382025300/jordan-pages.jpg" alt="When It's Dark Out">
+                                                        </div>
+
+                                                        <div class="track__number">4.</div>
+
+                                                        <div class="track__added">
+                                                            <i class="ion-checkmark-round added"></i>
+                                                        </div>
+
+                                                        <div class="track__title">Pages</div>
+                                                        
+                                                        <div class="track__explicit">
+                                                            <span class="label">2:54</span>
+                                                        </div>
+
+                                                        <div class="track__plays">109,431,001</div>
+                                                    </div>
+
+                                                    <div class="track">
+                                                        <div class="track__art">
+                                                            <img src="//s3.amazonaws.com/appforest_uf/f1626626191093x432132991235997440/jf.jpg" alt="When It's Dark Out">
+                                                        </div>
+
+                                                        <div class="track__number">5.</div>
+
+                                                        <div class="track__added">
+                                                            <i class="ion-checkmark-round added"></i>
+                                                        </div>
+
+                                                        <div class="track__title">When I Say My Prayers</div>
+                                                        
+                                                        <div class="track__explicit">
+                                                            <span class="label">3:25</span>
+                                                        </div>
+
+                                                        <div class="track__plays">201,648,324</div>
+                                                    </div>
+                                                    
+
+                                                    <button class="show-more button-light">Show 5 More</button>
+                                                    <!-- / -->
+                                                </div>                                             
+                                        </div>                                       
+                                    </div>
+
+                                    <!-- Artistas Relacionado --> 
+                                    <div class=" section-title-on">Artistas Relacionado
+                                                    
+                                        <div class="related__artist">
+
+                                            <a href="#" class="related-artist">
+                                                <span class="related-artist__img">
+                                                <img src="//s3.amazonaws.com/appforest_uf/f1626382948769x136309351361945550/saas.jpg" alt="saas">
+                                                </span>
+                                                <a class="related-artist__name">Sérgio Saas</a> 
+                                            </a>
+                                        
+                                        </div>
+
+                                        <div class="related__artist">
+
+                                            <a href="#" class="related-artist">
+                                                <span class="related-artist__img">
+                                                <img src="//s3.amazonaws.com/appforest_uf/f1626382028366x249706878905430660/link4.jpg" alt="Lynk4">
+                                                </span>
+                                                <a class="related-artist__name">Lynk 4</a> 
+                                            </a>
+                                        
+                                        </div>
+
+                                        <div class="related__artist">
+
+                                            <a href="#" class="related-artist">
+                                                <span class="related-artist__img">
+                                                <img src="//s3.amazonaws.com/appforest_uf/f1626382163766x197737763042615800/jef.png" alt="Lynk4">
+                                                </span>
+                                                <a class="related-artist__name">Jeferson Pillar</a> 
+                                            </a>
+                                        
+                                        </div>
+
+                                        <div class="related__artist">
+
+                                            <a href="#" class="related-artist">
+                                                <span class="related-artist__img">
+                                                <img src="//s3.amazonaws.com/appforest_uf/f1626382526821x590208875372456000/communion.jpg" alt="Lynk4">
+                                                </span>
+                                                <a class="related-artist__name">Communion</a> 
+                                            </a>
+                                        
+                                        </div>
+
+                                        <div class="related__artist">
+
+                                            <a href="#" class="related-artist">
+                                                <span class="related-artist__img">
+                                                <img src="//s3.amazonaws.com/appforest_uf/f1626382783966x605437776123701200/valente.jpg" alt="Lynk4">
+                                                </span>
+                                                <a class="related-artist__name">Felipe Valente</a> 
+                                            </a>
+                                        
+                                        </div>
+
+                                        <div class="related__artist">
+
+                                            <a href="#" class="related-artist">
+                                                <span class="related-artist__img">
+                                                <img src="//s3.amazonaws.com/appforest_uf/f1626383910471x242199253901287600/arrais.jpg" alt="Lynk4">
+                                                </span>
+                                                <a class="related-artist__name">Os Arrais</a> 
+                                            </a>
+                                        
+                                        </div>
+
+                                        
+
+ 
+                                        
+                                    </div>
+
+                                    
+                                    <!-- ALBUNS ARTISTAS --> 
+                                    <div class="container__albuns">
+
+                                   
+                                        <div class="hs__wrapper"> 
+                                                <div class="hs__header">
+                                                    <h2 class="titulo__album">Tocado Recentemente</h2>
+                                                    
+                                                        <div class="hs__arrows">
+                                                            <i class="fas fa-chevron-left"></i>
+                                                            <i class="fas fa-chevron-right"></i>  
+                                                        </div>
+                                                    
+                                                </div>
+                                                        
+                                                    <ul class="hs">
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                
+                                                                <img class=" artist__image" src="//s3.amazonaws.com/appforest_uf/f1625682942751x753025213184165500/cory.png">
+                                                                <img class="  artist__blur" src="//s3.amazonaws.com/appforest_uf/f1625682942751x753025213184165500/cory.png">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">Cory Asbury</p>
+                                                                <p class="capital">The Father's House</p>
+                                                            </div>
+                                                        </li>   
+
+                                                        <!-- album 2 --> 
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                <img class="artist__blur" src="//s3.amazonaws.com/appforest_uf/f1626228855026x654889948983721900/jefcapa.jpg">
+                                                                <img class="artist__image" src="//s3.amazonaws.com/appforest_uf/f1626228855026x654889948983721900/jefcapa.jpg">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">Jeferson Pillar</p>
+                                                                <p class="capital">Mais Perto Quero Estar</p>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                <img class="artist__blur" src="//s3.amazonaws.com/appforest_uf/f1626229740318x119590149013562020/junior.jpg">
+                                                                <img class="artist__image" src="//s3.amazonaws.com/appforest_uf/f1626229740318x119590149013562020/junior.jpg">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">Junior Garr</p>
+                                                                <p class="capital">Waters Acoustic</p>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                <img class="artist__blur" src="//s3.amazonaws.com/appforest_uf/f1626230397694x314090908145775700/josh.jpg">
+                                                                <img class="artist__image" src="//s3.amazonaws.com/appforest_uf/f1626230397694x314090908145775700/josh.jpg">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">Josh Garrels</p>
+                                                                <p class="capital">At the Table</p>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                <img class="artist__blur" src="//s3.amazonaws.com/appforest_uf/f1626230815384x648471444754801200/iamthey.jpg">
+                                                                <img class="artist__image" src="//s3.amazonaws.com/appforest_uf/f1626230815384x648471444754801200/iamthey.jpg">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">I Am They</p>
+                                                                <p class="capital">Faithful God</p>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+
+                                        </div>
+
+                                        <div class="hs__wrapper"> 
+                                                <div class="hs__header">
+                                                    <h2 class="titulo__album">Recomendados</h2>
+                                                        <div class="hs__arrows">
+                                                            <i class="fas fa-chevron-left"></i>
+                                                            <i class="fas fa-chevron-right"></i>  
+                                                        </div>
+                                                    
+                                                </div>
+                                                        
+                                                    <ul class="hs">
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                <img class="artist__blur" src="//s3.amazonaws.com/appforest_uf/f1626383154079x447868639146268300/leo.jpg">
+                                                                <img class="artist__image" src="//s3.amazonaws.com/appforest_uf/f1626383154079x447868639146268300/leo.jpg">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">Leonardo Gonçalves</p>
+                                                                <p class="capital">Getsêmani</p>
+                                                            </div>
+                                                        </li>   
+
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                <img class="artist__blur" src="//s3.amazonaws.com/appforest_uf/f1626377275352x542448116539902660/unspoken.jpg">
+                                                                <img class="artist__image" src="//s3.amazonaws.com/appforest_uf/f1626377275352x542448116539902660/unspoken.jpg">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">Unspoken</p>
+                                                                <p class="capital">You've Always Been</p>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                <img class="artist__blur" src="//s3.amazonaws.com/appforest_uf/f1626378644846x728538022985631400/casting.jpg">
+                                                                <img class="artist__image" src="//s3.amazonaws.com/appforest_uf/f1626378644846x728538022985631400/casting.jpg">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">Casting Crowns</p>
+                                                                <p class="capital">Great Are You Lord - Live</p>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                <img class="artist__blur" src="//s3.amazonaws.com/appforest_uf/f1626378828243x149138856099810370/king.jpg">
+                                                                <img class="artist__image" src="//s3.amazonaws.com/appforest_uf/f1626378828243x149138856099810370/king.jpg">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">for KING & COUNTRY</p>
+                                                                <p class="capital">O Come, O Come Emmanuel - Live</p>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="hs__item">
+                                                            <div class="js-tilt artist__thumbnail">
+                                                                <img class="artist__blur" src="//s3.amazonaws.com/appforest_uf/f1626379604574x631602265528794200/evans.jpg">
+                                                                <img class="artist__image" src="//s3.amazonaws.com/appforest_uf/f1626379604574x631602265528794200/evans.jpg">
+                                                                <div class="artist__ring"></div>
+                                                                <div class="artist__ring artist__ring--outer"></div>
+                                                            </div>
+
+                                                            <div class="artist__label">
+                                                                <p class="hs__item__artist">Anthony Evans</p>
+                                                                <p class="capital">Meaningless (Acoustic)</p>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                        </div>
+                                        
+                                       
+                                    </div>
+                    
+                                </div>
+
+                                
+                            </div>
+   
+                        </div>  
+                        
+                    </div>
+                </div>
+
+
+                
+            <!-- =============== /// /// /// =================-->
+            </div>
+
+            <div class="content__social">
+                <span class="main__friends"> Follow </span>
+                <div class="content__group"> <i class="fas fa-dot-circle"></i> <img src="img/danny.jpg" alt="">  </div>
+                <div class="content__group"> <i class="fas fa-dot-circle"></i> <img src="img/pillar.jpg" alt="">  </div>
+                <div class="content__group"> <i class="fas fa-dot-circle"></i> <img src="img/evans.jpg" alt="">  </div>
+                <div class="content__group"> <i class="fas fa-dot-circle"></i> <img src="img/ludke.jpg" alt="">  </div>
+                <div class="content__group"> <i class="fas fa-dot-circle"></i> <img src="img/esdras.jpg" alt="">  </div>
+                <div class="content__group"> <i class="fas fa-dot-circle"></i> <img src="img/crowns.jpg" alt="">  </div>
+                <div class="content__group"> <i class="fas fa-dot-circle"></i> <img src="img/valente.jpg" alt="">  </div>
+            </div>
+        </section>
+
+        <section class="play__sound"> 
+            
+            <div class="spotify-embeds"> 
+                <div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/5mF8951qcslYq3XnBI90Sf" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+              </div>
+        </section>
+
+        <!-- === ===== JS ANIMAÇÕES ===== ===  -->
+        <!-- === ===== Bbiblioteca - Animação Img Spider Man ===== ===  -->
+        <script src="js/app.js"> </script>
+
+        <!-- === ===== Bbiblioteca - Animação transição de entrada ===== ===  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+        <script>
+            $('.js-tilt').tilt({ 
+                perspective: 450,
+                scale: 1.05,
+             });
+        </script>
+
+        <script>feather.replace()</script>
+
+    </body>
+
+</html>
+
+
+

@@ -1,0 +1,356 @@
+// ======== HEADER NAV ========= 
+.px-3{
+    padding-left: 48px; //preenchimento esquerda
+    padding-right: 48px; //
+
+    border: 1px solid green;
+    }
+
+.navbar{
+
+max-width: 1600px;
+padding: 10px 40px;
+margin: 10px 40px;
+
+display: flex;
+flex-wrap: wrap;
+
+justify-content: space-between;
+align-items: center;
+
+border: 1px solid red;
+
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    //border: 1px solid orange ;
+    }
+
+// =========================================== LOGOTIPO ARANHA ===================================
+
+.logo{
+    max-width: 68px;
+
+    //border: 1px solid white;
+  }
+
+// ========================================== MENU LIST ==========================================
+    
+    .nav-list{
+    list-style: none;
+    display: flex;
+
+    //border: 1px solid pink;
+    
+
+    li{
+     margin-left: 24px; //espaçamento entre os itens do menu
+     
+    
+     }
+
+     a {
+     text-decoration: none;  //(none) restirar o sublinhado
+     }
+
+       .nav-link{
+        display: block;
+        text-decoration: none;
+
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 200;
+        color: $grey_dark;
+        padding: 8px 16px;
+        transition: all .7s ease;
+        position: relative;
+        align-items: center;
+        cursor: none; //ocultando curso ao passar o mouse sobre os links
+        
+        }
+            .nav-link:hover {
+            color: $white-light;
+            transform: scale(1.1); //aumentando a escala do link quando passar o mouse
+            background-color: $red_medium;
+            border-radius: 20px;
+            
+            }
+        
+            
+        // ---------------- Criando Teia e efeito Descendo ----------------
+        .nav-link::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            width: 2px;
+            height: 0px;
+            transition: .7s ease;
+            background: linear-gradient(180deg, rgba(233, 29, 34, 0) 0%, #E91D22 100%);
+
+        }
+
+        .nav-link:hover::after {
+            height: 40px;
+        }
+
+
+            
+
+     .nav-link-b{
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 200;
+        color: $grey_dark;
+        padding: 8px 16px;
+        transition: .7s ease;
+        position: relative;
+        cursor: none; //ocultando curso ao passar o mouse sobre beyourself
+    }
+        .nav-link-b:hover{
+            color:$red_medium;
+            transform: scale(1.1); //aumentando a escala do link quando passar o mouse
+            background-color: $white_medium;
+            border-radius: 20px;
+            
+        }
+}
+
+// ---------------- Criando Teia e efeito Descendo (Beyourself) ----------------
+.nav-link-b::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 2px;
+    height: 0px;
+    transition: .7s ease;
+    background: linear-gradient(180deg, rgba(233, 29, 34, 0) 0%, #E91D22 100%);
+}
+
+.nav-link-b:hover::after {
+    height: 40px;
+}
+
+
+
+
+// ================= NAV SOCIAL =================
+// ================================== ICONES REDES SOCIAIS ==========================
+.nav-social{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    
+   
+  
+    
+    svg{
+        margin-left: 32px;//espaçamento entre os icones
+        display: block;
+        width: 23px;
+        padding: 0 0;
+    
+    }
+        svg {
+
+            cursor: none; //ocultando curso ao passar o mouse sobre os icones da rede social
+            //margin-left: 300px; //espaçamento entre os icones da rede social
+            stroke-width: 10px;
+            stroke: blue;
+            stroke-dasharray: 10000;
+            stroke-dashoffset: 10000;
+
+            width: 35px; //largura dos icones rede social
+            height: 30px;   //altura dos icones rede social
+           
+            margin: 10px;
+            justify-content: space-between;
+           
+            
+        }
+
+        
+}
+
+
+
+
+.nav-social svg path, .nav-social svg circle {
+    transition: .7s ease;
+    fill: $white_dark;
+}
+
+.nav-social svg:hover path {
+    fill: $white_light;
+    transform: translate3d(0, -3px, 0);
+    text-decoration: none;
+    transform: scale(1.1); //aumentando a escala do svg quando passar o mouse
+ 
+   
+}
+
+
+// ==== ESTILISANDO ICONES REDES SOCIAIS - MENU HEADER =========
+
+.facebook{
+    cursor: none;
+     display: inline-block;
+     padding-right: 30px;
+     width: 35px;
+     height: 35px;
+     background: $blue-medium;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 20px;
+     text-decoration: none;
+     border-radius: 4px;
+ 
+     &:hover {
+         transform: translate3d(0, -3px, 0);
+         transition: .7s ease;
+         background: #3b5998 //cor do egfeito ao passar o mouse nas redes sociais
+     }
+ }
+ 
+ .instagram{
+     cursor: none;
+     display: inline-block;
+     padding-right: 30px;
+     width: 35px;
+     height: 35px;
+     background: $blue-medium;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 20px;
+     text-decoration: none;
+     border-radius: 4px;
+     
+     &:hover {
+         transform: translate3d(0, -3px, 0);
+         transition: .7s ease;
+ 
+         background: #f09433; 
+         background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+         background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+         background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+     }
+ }
+ 
+ .twitter{
+     cursor: none;
+     display: inline-block;
+     padding-right: 30px;
+     width: 35px;
+     height: 35px;
+     background: $blue-medium;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 20px;
+     text-decoration: none;
+     border-radius: 4px;
+     
+     &:hover {
+         transform: translate3d(0, -3px, 0);
+         transition: .7s ease;
+         background: #1DA1F2; //cor do egfeito ao passar o mouse nas redes sociais
+     }
+ }
+ 
+ .youtube{
+     cursor: none;
+     display: inline-block;
+     padding-right: 30px;
+     width: 35px;
+     height: 35px;
+     background: $blue-medium;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 20px;
+     text-decoration: none;
+     border-radius: 4px;
+     
+     &:hover {
+         transform: translate3d(0, -3px, 0);
+         transition: .7s ease;
+         background: $red_light //cor do egfeito ao passar o mouse nas redes sociais
+     }
+ }
+ 
+ 
+ 
+
+
+
+
+
+
+// caixinha de busca
+.search{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    
+
+}
+
+// caixinha de busca
+.search input{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 2555, 0.5);
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+
+    backdrop-filter: blur(10px);
+    
+}
+
+
+//texto search dentro da caixinha
+.search input::placeholder{
+font-size: 12px;
+color: #fff;
+font-family: 'Mukta';
+font-weight: 200;
+letter-spacing: 2px;
+border-spacing: 1px;
+
+}
+
+ //img lupa
+    .search-img{
+    
+        width: 25px;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        padding-right: 10px;
+        color: #fff;
+        border-right:  1px solid #fff;
+        
+    }
+    
